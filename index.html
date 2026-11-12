@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FALEH FINDS | Discover. Compare. Shop.</title>
+<meta name="description" content="FALEH FINDS is an independent product discovery website. Explore carefully selected products, then check them on Amazon.">
+<meta property="og:title" content="FALEH FINDS | Discover. Compare. Shop.">
+<meta property="og:description" content="Independent product discovery. Purchases are completed on Amazon.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ffffff">
+<style>
+:root{--ink:#151515;--mute:#6a6a66;--line:#e2e2de;--soft:#f3f3f1;--bg:#fff;--r:18px}
+*{box-sizing:border-box;margin:0}
+body{font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:700;letter-spacing:-.01em;line-height:1.15}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;height:58px}
+.logo{font-size:1.2rem;text-decoration:none}
+nav{display:flex;gap:16px;font-size:.92rem}
+nav a{text-decoration:none;color:var(--mute)}nav a:hover{color:var(--ink)}
+.hero{padding:56px 0 40px}
+.hero h1{font-size:clamp(2.2rem,8vw,3.8rem);max-width:14ch}
+.hero p{color:var(--mute);margin:16px 0 24px;max-width:48ch}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;background:var(--ink);color:#fff;text-decoration:none;font-weight:600;font-size:.9rem;border:1px solid var(--ink)}
+.btn.alt{background:var(--bg);color:var(--ink);border-color:var(--line);margin-left:8px}
+section{padding:28px 0}
+h2{font-size:1.5rem;margin-bottom:16px}
+.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.cat{padding:16px;border:1px solid var(--line);border-radius:var(--r);text-decoration:none;font-weight:600;background:var(--soft)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.card{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;background:var(--bg)}
+.ph{aspect-ratio:1/1;background:var(--soft);display:flex;align-items:center;justify-content:center;font:700 2rem Georgia,serif;color:#b5b5b0}
+.card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.cb{padding:14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.cb small{color:var(--mute)}.cb h3{font-size:1.05rem}
+.cb .btn{margin-top:auto;text-align:center;font-size:.78rem;letter-spacing:.04em}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+input,select{font:inherit;padding:11px 14px;border:1px solid var(--line);border-radius:999px;background:var(--bg);color:var(--ink)}
+input{flex:1;min-width:180px}
+.empty{padding:36px 20px;border:1px dashed var(--line);border-radius:var(--r);color:var(--mute);text-align:center}
+.page{max-width:68ch;padding:36px 0}.page h1{font-size:2rem;margin-bottom:14px}.page p{margin-bottom:12px}
+.pd{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));padding:32px 0}
+.pd h1{font-size:2rem;margin:6px 0 12px}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:28px 0 40px;color:var(--mute);font-size:.88rem}
+footer .links{display:flex;flex-wrap:wrap;gap:6px 16px;margin:12px 0}
+:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.logo{display:flex;align-items:center;gap:10px}.logo img{height:30px;width:auto}
+.hero{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:center}
+.hero img{width:100%;border-radius:24px;display:block}
+.hero small{color:var(--mute)}
+.cat{padding:0;overflow:hidden}.cat img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}.cat span{display:block;padding:12px 14px}
+</style>
+</head>
+<body>
+<header><div class="wrap bar"><a class="logo" href="#/"><img src="img/logo.webp" alt="" onerror="this.remove()">FALEH FINDS</a>
+<nav><a href="#/shop">Shop</a><a href="#/categories">Categories</a><a href="#/page/about">About</a></nav></div></header>
+<main id="app" class="wrap"></main>
+<footer><div class="wrap">
+<div class="logo" style="margin-bottom:6px"><img src="img/logo.webp" alt="" onerror="this.remove()">FALEH FINDS</div><p>DISCOVER. COMPARE. SHOP.</p>
+<strong>As an Amazon Associate, I earn from qualifying purchases.</strong>
+<div class="links"><a href="#/page/about">About</a><a href="#/page/contact">Contact</a><a href="#/page/faq">FAQ</a><a href="#/page/privacy">Privacy Policy</a><a href="#/page/terms">Terms</a><a href="#/page/affiliate-disclosure">Affiliate Disclosure</a><a href="#/page/editorial-policy">Editorial Policy</a></div>
+<p>FALEH FINDS is an independent website and is not owned, sponsored or endorsed by Amazon. We do not sell products; purchases are completed on Amazon. Prices and availability change, so check Amazon for current details.</p>
+<p>© 2026 FALEH FINDS</p></div></footer>
+<script>
+// ===== Settings you can edit =====
+const EMAIL = "your-email@example.com";
+const CATS = [["mens-fashion","Men’s Fashion","fashion"],["womens-fashion","Women’s Fashion","fashion"],["sneakers","Sneakers","sneakers"],["watches","Watches","watches"],["electronics","Electronics","technology"],["smartphones","Smartphones","technology"],["audio","Audio","technology"],["gaming","Gaming","gaming"],["home-kitchen","Home & Kitchen","home"],["fitness-accessories","Fitness Accessories","fitness"],["student-essentials","Student Essentials","student"],["travel-accessories","Travel Accessories","travel"],["bags-backpacks","Bags & Backpacks","travel"],["office-desk","Office & Desk","student"],["beauty-personal-care","Beauty & Personal Care","beauty"]];
+const COLS = [["everyday-essentials","Everyday Essentials","home"],["study-desk-setup","Study Desk Setup","student"],["minimalist-lifestyle","Minimalist Lifestyle","watches"],["gaming-setup","Gaming Setup","gaming"],["travel-essentials","Travel Essentials","travel"],["fashion-accessories","Fashion Accessories","watches"]];
+const PAGES = {
+ "about":["About FALEH FINDS","<p>FALEH FINDS is an independent product discovery website. We pick products that look useful, write our own descriptions and link to Amazon so you can check the current price and details.</p><p>We do not sell anything ourselves.</p>"],
+ "contact":["Contact","<p>Questions, corrections or suggestions? Email <a href='mailto:"+EMAIL+"'>"+EMAIL+"</a>.</p>"],
+ "faq":["FAQ","<h3>Do you sell products?</h3><p>No. Every product links to Amazon, where you complete the purchase.</p><h3>Does it cost more to buy through your links?</h3><p>No. The price you pay is the same.</p><h3>Why don’t you show prices?</h3><p>Amazon prices change often. Check Amazon for the current price.</p>"],
+ "privacy":["Privacy Policy","<p>This site does not ask for accounts or collect personal details. Hosting providers may keep standard server logs. When you click a link to Amazon, Amazon’s own privacy policy applies on their site.</p>"],
+ "terms":["Terms","<p>Information on this site is provided for general guidance. Product details, prices and availability can change, so confirm them on Amazon before buying. We are not responsible for purchases made on third-party sites.</p>"],
+ "affiliate-disclosure":["Affiliate Disclosure","<p>FALEH FINDS is a participant in the Amazon Associates Program. As an Amazon Associate, I earn from qualifying purchases. Links to Amazon may earn this site a commission at no extra cost to you.</p>"],
+ "editorial-policy":["Editorial Policy","<p>We write our own product descriptions. We do not publish fake reviews, ratings or discounts. Commissions do not decide which products we feature.</p>"]
+};
+// ===== App =====
+let P=[], S={q:"",cat:"",sort:"new"};
+const $=s=>document.querySelector(s), app=$("#app");
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const cname=slug=>(CATS.find(c=>c[0]===slug)||[0,slug])[1];
+function card(p){
+ const img=p.image?`<img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy">`:`<div class="ph">${esc(p.name[0]||"F")}</div>`;
+ return `<article class="card"><a href="#/product/${esc(p.id)}">${img}</a><div class="cb"><small>${esc(cname(p.category))}</small><h3><a href="#/product/${esc(p.id)}" style="text-decoration:none">${esc(p.name)}</a></h3><a class="btn" href="${esc(p.link)}" target="_blank" rel="sponsored nofollow noopener">CHECK PRICE ON AMAZON</a></div></article>`;
+}
+const grid=list=>list.length?`<div class="grid">${list.map(card).join("")}</div>`:`<div class="empty">No products here yet. New finds are added regularly.</div>`;
+const tiles=(L,k)=>`<div class="cats">${L.map(c=>`<a class="cat" href="#/${k}/${c[0]}"><img src="img/${c[2]}.webp" alt="" loading="lazy" onerror="this.remove()"><span>${esc(c[1])}</span></a>`).join("")}</div>`;
+const catList=()=>tiles(CATS,"category");
+function setTitle(t){document.title=(t?t+" | ":"")+"FALEH FINDS"}
+function filtered(){
+ let l=P.filter(p=>(!S.cat||p.category===S.cat)&&(!S.q||(p.name+" "+(p.description||"")+" "+(p.tags||[]).join(" ")).toLowerCase().includes(S.q.toLowerCase())));
+ if(S.sort==="az")l.sort((a,b)=>a.name.localeCompare(b.name)); else if(S.sort==="new")l=l.slice().reverse();
+ return l;
+}
+function render(){
+ const parts=(location.hash.slice(1)||"/").split("/").filter(Boolean), [v,a]=parts;
+ window.scrollTo(0,0);
+ if(!v){setTitle("");
+  const feat=P.filter(p=>p.featured), list=(feat.length?feat:P.slice().reverse()).slice(0,6);
+  app.innerHTML=`<div class="hero"><div><small>Discover. Compare. Shop.</small><h1>Find something worth discovering.</h1><p>Carefully selected products, everyday essentials and smart accessories. Check each one on Amazon.</p><a class="btn" href="#/shop">Explore finds</a><a class="btn alt" href="#/categories">Browse categories</a></div><img src="img/hero.webp" alt="Flat-lay of a sneaker, watch, earbuds and accessories on a soft grey backdrop" onerror="this.remove()"></div><section><h2>Shop by category</h2>${catList()}</section><section><h2>Latest finds</h2>${grid(list)}</section><section><h2>Shop by interest</h2>${tiles(COLS,"collection")}</section>`;
+ } else if(v==="collection"){const c=COLS.find(x=>x[0]===a)||[a,a];setTitle(c[1]);app.innerHTML=`<section><h2>${esc(c[1])}</h2>${grid(P.filter(p=>(p.collections||[]).includes(a)))}</section>`;
+ } else if(v==="categories"){setTitle("Categories");app.innerHTML=`<section><h2>Categories</h2>${catList()}</section>`;
+ } else if(v==="category"){const n=cname(a);setTitle(n);app.innerHTML=`<section><h2>${esc(n)}</h2>${grid(P.filter(p=>p.category===a))}</section>`;
+ } else if(v==="shop"){setTitle("Shop");
+  app.innerHTML=`<section><h2>All finds</h2><div class="tools"><input id="q" type="search" placeholder="Search products" value="${esc(S.q)}" aria-label="Search"><select id="c" aria-label="Category"><option value="">All categories</option>${CATS.map(c=>`<option value="${c[0]}"${S.cat===c[0]?" selected":""}>${esc(c[1])}</option>`).join("")}</select><select id="s" aria-label="Sort"><option value="new"${S.sort==="new"?" selected":""}>Newest</option><option value="az"${S.sort==="az"?" selected":""}>A to Z</option></select></div><div id="g"></div></section>`;
+  const up=()=>{$("#g").innerHTML=grid(filtered())};up();
+  $("#q").oninput=e=>{S.q=e.target.value;up()};$("#c").onchange=e=>{S.cat=e.target.value;up()};$("#s").onchange=e=>{S.sort=e.target.value;up()};
+ } else if(v==="product"){const p=P.find(x=>x.id===a);
+  if(!p){app.innerHTML=`<div class="page"><h1>Product not found</h1><p><a href="#/shop">Back to all finds</a></p></div>`;return}
+  setTitle(p.name);
+  app.innerHTML=`<div class="pd"><div>${p.image?`<img src="${esc(p.image)}" alt="${esc(p.name)}" style="width:100%;border-radius:var(--r)">`:`<div class="ph" style="border-radius:var(--r)">${esc(p.name[0])}</div>`}</div><div><small><a href="#/category/${esc(p.category)}">${esc(cname(p.category))}</a></small><h1>${esc(p.name)}</h1><p>${esc(p.description)}</p><p style="margin:20px 0"><a class="btn" href="${esc(p.link)}" target="_blank" rel="sponsored nofollow noopener">CHECK PRICE ON AMAZON</a></p><small>Affiliate link: we may earn a commission at no extra cost to you.</small></div></div>`;
+ } else if(v==="page"&&PAGES[a]){setTitle(PAGES[a][0]);app.innerHTML=`<div class="page"><h1>${PAGES[a][0]}</h1>${PAGES[a][1]}</div>`;
+ } else {location.hash="#/"}
+}
+addEventListener("hashchange",render);
+fetch("products.json").then(r=>r.json()).catch(()=>[]).then(d=>{P=Array.isArray(d)?d:[];render()});
+</script>
+</body>
+</html>
